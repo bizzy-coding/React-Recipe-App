@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react";
 
-function popular() {
+function Popular() {
   return (
-    <div>popular</div>
+    <div>Popular</div>
   )
 }
 
-export default popular
+export default Popular;
 
-// type rfce -it's from the es7 extension

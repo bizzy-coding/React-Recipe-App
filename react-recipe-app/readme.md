@@ -17,6 +17,7 @@ Currently working on the homepage
 - shortcut rfce - from the es7 extension
 - don't forget pascal case!
 - had to directly include api key in file to get it to work, learn more about env 
+- bizzle$ npm install framer-motion react-icons react-router-dom styled-components
 
 
 ## 🚀 About Me

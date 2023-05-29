@@ -15,7 +15,5 @@ function Home() {
 
 export default Home;
 
-//THINGS LEARNED
-// type rfce -it's from the es7 extension
-//don't forget pascal case!
+
 

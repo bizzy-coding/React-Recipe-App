@@ -13,12 +13,21 @@ function Popular() {
   },[]);
   const getPopular = async () => {
 
-    
-
-    const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=63a977b148fe498583d565fe6ea0fed7&number=9`);
+    const check = localStorage.getItem('popular');
+//making it so it doesn't fetch the api every time you refresh 
+    if(check){
+      setPopular(JSON.parse(check));
+    } else {
+      const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=63a977b148fe498583d565fe6ea0fed7&number=9`);
     const data = await api.json();
+      localStorage.setItem("popular" , JSON.stringify(data.recipes))
     setPopular(data.recipes)
     console.log(data.recipes)
+
+    }
+
+    
+    
   }
   return (
     <div>

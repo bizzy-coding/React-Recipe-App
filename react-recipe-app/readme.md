@@ -18,6 +18,7 @@ Currently working on the homepage
 - don't forget pascal case!
 - had to directly include api key in file to get it to work, learn more about env 
 - bizzle$ npm install framer-motion react-icons react-router-dom styled-components
+- learn more about styled components
 
 
 ## 🚀 About Me

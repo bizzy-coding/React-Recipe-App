@@ -11,23 +11,22 @@ function Popular() {
   useEffect(() => {
     getPopular();
   },[]);
-  const getPopular = async () => {
 
+
+  const getPopular = async () => {
     const check = localStorage.getItem('popular');
 //making it so it doesn't fetch the api every time you refresh 
     if(check){
       setPopular(JSON.parse(check));
+      console.log("we checked and already have api so not logging the below")
     } else {
       const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=63a977b148fe498583d565fe6ea0fed7&number=9`);
     const data = await api.json();
       localStorage.setItem("popular" , JSON.stringify(data.recipes))
     setPopular(data.recipes)
-    console.log(data.recipes)
+    console.log("I am the data.recipes" , data.recipes)
 
-    }
-
-    
-    
+     }
   }
   return (
     <div>
@@ -36,7 +35,7 @@ function Popular() {
         <Splide 
         options={{
           width: 1900,
-          perPage: 3,
+          perPage: 4,
           gap: 30,
         }}
         >

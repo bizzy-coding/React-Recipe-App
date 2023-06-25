@@ -28,6 +28,8 @@ function Popular() {
 
      }
   }
+//taking the array and saving it as a string with " JSON.stringify(data.recipes)"
+
   return (
     <div>
        <Wrapper>

@@ -12,7 +12,12 @@ Recipe app built following the Developed By Ed Tutorial
 
 Currently working on the homepage 
 
-## Notes
+## Access via terminal  
+
+- cd then drag in parent folder 
+- npm start
+
+## Notes & Learnings
 
 - shortcut rfce - from the es7 extension
 - don't forget pascal case!
@@ -21,20 +26,22 @@ Currently working on the homepage
 - learn more about styled components
 
 
+
+
 ## 🚀 About Me
 
 Hi. I'm Laura Bizzle, but you can call me Bizz.
 
 I am always [Bizzy Coding](https://www.instagram.com/bizzy_coding/) 
 
-- Self-taught front-end developer with a background in design & digital marketing.
+- Self-taught front-end developer with a background in digital design & marketing.
 
 - Career switched to front-end developer in 2022 and haven't looked back.
 
 - Coding is life 💻
 
 ## 🔗 Connect with me!
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://bizzy-coding.github.io/Junior_Dev/)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://bizzy-coding.github.io/FrontEnd_Portfolio_2023/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/laura-bizzle/)
 [![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/bizzy_coding/)
 

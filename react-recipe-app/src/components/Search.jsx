@@ -1,30 +1,37 @@
 import styled from "styled-components";
-import {useState} from "react";
+import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 
 function Search() {
-    return (
-        <FormStyle>
-            <div>
-                <FaSearch></FaSearch>
-            <input type="text" />
-            </div>
-            
-        </FormStyle>
-    )
+  const [input, setInput] = useState("");
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+  };
+  
+  return (
+    <FormStyle onSumbit={submitHandler}>
+      <div>
+        <FaSearch></FaSearch>
+        <input 
+            onChange={(e) => setInput(e.target.value)} 
+            type="text" 
+            value={input} 
+        />
+      </div>
+    </FormStyle>
+  );
 }
 
 const FormStyle = styled.form`
-margin: 0rem 20rem;
-position: relative;
+  margin: 0rem 20rem;
+  position: relative;
 
-div {
+  div {
     width: 100%;
+  }
 
-}
-
-
-input{
+  input {
     border: none;
     background: grey;
     font-size: 1.5rem;
@@ -34,7 +41,7 @@ input{
     border-radius: 1rem;
     outline: none;
   }
-  
+
   svg {
     position: absolute;
     top: 50%;
@@ -42,6 +49,6 @@ input{
     transform: (100%, -50%);
     color: white;
   }
-`
+`;
 
 export default Search;

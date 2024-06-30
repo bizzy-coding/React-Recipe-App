@@ -14,7 +14,6 @@ Currently working on the homepage
 
 ## Access via terminal  
 
-- cd then drag in parent folder 
 - npm start
 
 ## Notes & Learnings

@@ -46,5 +46,4 @@ I am always [Bizzy Coding](https://www.instagram.com/bizzy_coding/)
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
 * [React Crash Course - Build A Full Recipe App Tutorial](https://www.youtube.com/watch?v=xc4uOzlndAk)

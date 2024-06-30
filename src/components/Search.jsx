@@ -13,7 +13,7 @@ function Search() {
   };
 
   return (
-    <FormStyle onSumbit={submitHandler}>
+    <FormStyle onSubmit={submitHandler}>
       <div>
         <FaSearch></FaSearch>
         <input 

@@ -15,16 +15,33 @@ function Veggie() {
 
   const getVeggie = async () => {
     const check = localStorage.getItem('veggie');
+    console.log()
 //making it so it doesn't fetch the api every time you refresh 
-    if(check){
-      setVeggie(JSON.parse(check));
-      console.log("we checked and already have api so not logging the below")
-    } else {
-      const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=63a977b148fe498583d565fe6ea0fed7&number=9&tags=vegetarian`);
+    if(check && check !== undefined){ 
+      try {
+        const parsedVeggie = JSON.parse(check);
+        setVeggie(parsedVeggie);
+        console.log("Loaded veggie from localStorage:", parsedVeggie);
+
+      } catch (error) {
+        console.error("Error parsing JSON from localStorage:", error);
+      }
+     
+    } else { 
+
+      try {
+
+        const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=63a977b148fe498583d565fe6ea0fed7&number=9&tags=vegetarian`);
     const data = await api.json();
       localStorage.setItem("veggie" , JSON.stringify(data.recipes))
-    setVeggie(data.recipes)
+      setVeggie(data.recipes)
     console.log("I am the data.recipes" , data.recipes)
+
+      } catch (error) {
+        console.error("Error fetching data from API:", error);
+      }
+
+    
 
      }
   }
